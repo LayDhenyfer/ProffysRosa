@@ -1,13 +1,1 @@
-## Next Level Week 2
 
-<h1 align="center">
-<img src="https://lh3.googleusercontent.com/snrX8oHpD8tAChS1IHJcw1jRn1EhNK0etixFWPGs0BLEh9eAeZauwjbWPqvj23ai8nj03RC_0KfJ55tAs8muBOXrTXe0oUTM2a3CuQhxzmWOUpgxxJNtT0GLB29KXaYQW81bA2zump3GYfFlPl2lwJO2TneQ1gNQQ_Nhx4xvMZawZN8xYsxgACj9THqa0JE0f-dNXxHjV8-3GzpiJlmkIzUFIM-gX_NSicS9yBMT5CJ0TM-Jmd5WLnrC-5GudLjv_K0X2tciIqN3Bjs3hpn_dyQkWJbelaDc5K6ELxjM95tVfqhlZOmv1u56Er0JA66f2BXBphca07_oCRLy-0PoVqotx3MmfSrIHuxXE-W_styPs4YgFeA5cW8LP8EO6ZsYIN-HhWQBmd8vDjh71wXDK34n60u-Ghc2cFL4FtXqh10VpSVXeUEmRKdbpIu7KwwNAw_7fTa-TfhYjlTohy418ZpyIH4vaLGHkt18i-LoGorX7hNikfV16WoYJ3oRs0im3vUJNh_khGl4kk_4hJzmJCHM2XEEH--Z4Pli-JNFZ04bith_E25m83D8bYm54LI8tYobOCW0SDx9eZj_uymyS8hOBAVehsV6SrnmbNy0kneb_Erwc3cITP2T0DpzkomXkEjTPI1IKQi3uGKywMQ9sNkFrLpTOMTGa58CIUAEfxm3TJFSBgWLsw2UafckCw=w1808-h529-no?authuser=0">
-</h1>
-
-:newspaper:<h3 > Indice <h1>
-# ProffysRosa
-<br><br>
-
-<h2 align="center">
-<img src="https://camo.githubusercontent.com/e374677bcea8e624fe954b1bf81348f9bb4390df/68747470733a2f2f696b2e696d6167656b69742e696f2f6361706974616f2f50726f6666792f6e6c77325f36643750766c485a352e737667">
-</h2>
