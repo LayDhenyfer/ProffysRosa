@@ -47,7 +47,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
   
   
 ###  🎨 Layout : <a name="layout">
-[Laylia Proffy Pink](https://www.figma.com/file/HXKuaIf26JhK12NAHeIiqw/Untitled?node-id=1%3A6)
+[Laylia Proffy em Mobile](https://www.figma.com/file/HXKuaIf26JhK12NAHeIiqw/Untitled?node-id=1%3A6)
+	
+[Laylia Proffy em Desktop](https://www.figma.com/file/HXKuaIf26JhK12NAHeIiqw/Untitled?node-id=1%3A17)
 
 [Projeto em ação](https://photos.app.goo.gl/ohWW5JN2z34Uuo8b6)
 
