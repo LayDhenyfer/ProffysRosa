@@ -146,7 +146,7 @@ $ pwd = mostra a pasta
 
 $ crtl+L = limpa 
 
-$ctrl + c = parar de excutar algo
+$ ctrl + c = parar de excutar algo
 ```
 <h3 align="center"> 
  Desenvolvido com 💖 por <a href="https://rocketseat.com.br/">Rocketseat</a> 🚀. 
@@ -156,7 +156,7 @@ $ctrl + c = parar de excutar algo
 </h4>
 
 
-
+      
 
 
 
