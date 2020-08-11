@@ -59,7 +59,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 #### 📱 Mobile: <a name="preview">
-<img src="https://j.gifs.com/XLOO5o.gif" width="300"> &nbsp; &nbsp;  &nbsp; <img src="https://ik.imagekit.io/5vlrdbrxlr/proffy2mobile_mZEvC49pV.png" width="300">  &nbsp; &nbsp; &nbsp; <img src="https://ik.imagekit.io/5vlrdbrxlr/proffy3mobile_SUnLcAi4al.png" width="300"> </h4> 
+<img src="https://j.gifs.com/XLOO5o.gif" width="300"> &nbsp; &nbsp;  &nbsp; &nbsp; <img src="https://ik.imagekit.io/5vlrdbrxlr/proffy3mobile_SUnLcAi4al.png" width="300"> </h4> 
 
 <br><br>
 #### 💻  Desktop: <a name="preview">
