@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e91e63">
+
+    <title>Proffy | Your online study platform</title>
+    
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/Partials/header.css">
+    <link rel="stylesheet" href="/Styles/Partials/forms.css">
+    <link rel="stylesheet" href="/Styles/Partials/page-study.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-study">
+
+    <div id="container">
+        <header class="page-header">
+          <div class="top-bar-container">
+            <a href="/"><img src="/images/icons/back.svg" alt="back"></a>
+            <img src="/images/logo.svg" alt="proffy">
+          </div>
+
+          <div class="header-content"> 
+            <strong class="text-study">These are the available proffys.</strong>
+            <form id="search-teachers">
+                <div class="select-block">
+                  <label for="subject"> Matter </label>
+                  <select name="subject" id="subject">
+                    <option value="" disabled="" hidden=""> Select an option </option>
+
+                    {%for subject in subjects %} 
+                    <option value="{{loop.index0}}" {{"selected" if filters.subject == loop.index0}}>
+                      {{subject}}
+                  </option>
+                    {%endfor%}
+
+                  </select>
+                  
+                </div>
+                <div class="select-block">
+                  <label for="weekday"> Day of the week </label>
+                  <select name="weekday" id="weekday">
+                      <option value="" disabled="" hidden=""> Select an option </option>
+                      
+                      {%for weekday in weekdays %} 
+                      <option value="{{loop.index0}}" {{"selected" if filters.weekday == loop.index0}}>
+                        {{weekday}}
+                    </option>
+                      {%endfor%}
+                  
+                  </select>
+              </div>
+              <div class="input-block">
+                  <label for="time"> Time </label>
+                  <input name="time" id="time" type="time" value="{{filters.time}}">
+              </div>
+              <button class="btn btn--green" type="submit" > Filter </button>
+            </form>
+          </div>
+        </header>  
+
+      <main>
+         
+        {% if proffys == "" %}
+        <p class="no-results">No proffy found in your search!!</p>
+
+        {%else%}
+
+        {%for proffy in proffys%}
+        <article class="teacher-item">
+          <header>
+             <img 
+            src="{{proffy.avatar}}" 
+            alt="{{proffy.name}}">
+          <div>
+            <strong>{{proffy.name}}</strong>
+            <span>{{proffy.subject}}</span>
+          </div>
+            </header>
+               <p>{{proffy.bio}}</p>
+          <footer>
+               <p>Price/hour<strong>$ {{proffy.cost}}</strong></p>
+
+             <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&
+             text=I am interested in your class {{proffy.subject}} {{proffy.name}}"
+             class="button btn btn--green" target="_blank">
+               <img src="/images/icons/whatsapp.svg" alt="Whatsapp"> Contact me
+             </a>
+
+          </footer>
+       </article>
+        {%endfor%}
+
+        {%endif%}
+
+        
+      </main>  
+    </div>
+
+</body>
+</html>

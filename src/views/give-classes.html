@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#e91e63">
+
+    <title>Proffy | Your online study platform</title>
+    
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="/Styles/main.css">
+    <link rel="stylesheet" href="/Styles/Partials/header.css">
+    <link rel="stylesheet" href="/Styles/Partials/forms.css">
+    <link rel="stylesheet" href="/Styles/Partials/page-give-classes.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+
+    <script src="/scripts/addField.js" defer></script>
+</head>
+<body id="page-give-classes">
+
+    <div id="container">
+        <header class="page-header">
+          <div class="top-bar-container">
+            <a href="/"><img src="/images/icons/back.svg" alt="back"></a>
+            <img src="/images/logo.svg" alt="proffy">
+          </div>
+
+          <div class="header-content">
+            <strong class="text-teach"> How amazing you want to teach.</strong>
+            <p class="txt-teach">The first step, is to fill out this application form.</p>
+          </div>
+        </header>  
+
+      <main>
+        <form action="/save-classes" id="create-class" method="POST">
+          <fieldset>
+            <legend>Your data</legend>
+
+            <div class="input-block">
+              <label for="name">Full name</label>
+              <input name="name" id="name" required>
+            </div>
+
+            <div class="input-block">
+              <label for="avatar"> Your photo link <small>(start with https://)</small></label>
+              <input name="avatar" id="avatar" type="url" required>
+            </div>
+
+            <div class="input-block">
+              <label for="whatsapp">Whatsapp <small>(only numbers)</small></label>
+              <input name="whatsapp" id="whatsapp" type="number" required>
+            </div>
+
+            <div class="textarea-block">
+              <label for="bio">Biography</label>
+              <textarea name="bio" id="bio" required></textarea>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>About the class</legend>
+            <div class="select-block">
+              <label for="subject">Matter</label>
+              <select name="subject" id="subject" required>
+                <option value="">Select which one you want to teach</option>
+                {%for subject in subjects %} 
+                    <option value="{{loop.index}}">{{subject}}</option>
+                    {%endfor%}
+              </select>
+            </div>
+
+            <div class="input-block">
+              <label for="cost">Cost of your hour per class 
+                <small>($)</small>
+              </label>
+              <input name="cost" type="cost" id="cost" type="number" required>
+            </div>
+          </fieldset>
+          
+          <fieldset id="schedule-items">
+            <legend>Available time
+              <button type="button" id="add-time">+ New time</button>
+            </legend>
+
+            <div class="schedule-item">
+              <div class="select-block">
+                <label for="weekday">Day of the week</label>
+                 <select name="weekday[]" required>
+                    <option value="">Select the day</option>
+                    {%for weekday in weekdays %} 
+                      <option value="{{loop.index0}}">{{weekday}}</option>
+                      {%endfor%}
+                  
+                 </select>
+              </div>
+
+              <div class="input-block">
+                <label for="time_from">From</label>
+                <input type="time" name="time_from[]" required>
+              </div>
+
+              <div class="input-block">
+                <label for="time_to">To</label>
+                <input type="time" name="time_to[]" required>
+              </div>
+
+            </div>
+
+          </fieldset>
+        </form>
+
+        <footer>
+          <p class="up">
+            <img src="/images/icons/warning.psd.png" alt="Important warning">
+            Important! <br> Fill in all the field
+          </p>
+          <button class="btn btn--green" type="submit" form="create-class">Save registration</button>
+        </footer>
+      </main>  
+    </div>
+
+    <script src="src/script.js"></script>
+
+</body>
+</html>
