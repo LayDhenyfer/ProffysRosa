@@ -151,7 +151,7 @@ $ crtl+L = limpa
 $ ctrl + c = parar de excutar algo
 ```
 <h3 align="center"> 
- Desenvolvido com 💖 por <a href="https://rocketseat.com.br/">Rocketseat</a> 🚀. 
+ Desenvolvido com 💖 por Laylia Dhennyfe, junto com a <a href="https://rocketseat.com.br/">Rocketseat</a> 🚀. 
 </h3>
 <h4 align="center"> 
 	🚧  Proffy 🚀 Finalizado! 🚧
