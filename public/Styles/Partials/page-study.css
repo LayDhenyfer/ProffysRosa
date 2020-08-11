@@ -1,0 +1,330 @@
+
+@keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+      -webkit-transform: translateX(10rem);
+      -moz-transform: translateX(10rem);
+      -ms-transform: translateX(10rem);
+      -o-transform: translateX(10rem);
+    }
+    80% {
+      transform: translateX(-1remx);
+      -webkit-transform: translateX(-1remx);
+      -moz-transform: translateX(-1remx);
+      -ms-transform: translateX(-1remx);
+      -o-transform: translateX(-1remx);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+    }
+  }
+
+.text-study {
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.btn, .btn:link, .btn:visited {
+    
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .btn--green {
+    background-color: #55c57a;
+    color: #fff;
+  }
+  .btn--green::after {
+    background-color: #55c57a;
+  }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: .8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+
+#page-study #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary);
+}
+
+#search-teachers .select-block {
+    margin-bottom: 1.4rem;
+}
+
+#search-teachers button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -ms-transition: background .2s;
+    -o-transition: background .2s;
+    margin-top: 3.2rem;
+    outline: 0;
+}
+
+#search-teachers button:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+
+#page-study main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.teacher-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: .4rem;
+}
+
+.teacher-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.teacher-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+.teacher-item footer p strong {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block;
+    
+}
+
+.teacher-item footer .button {
+    width: 15rem;
+    height: 5.6rem;
+    background-color: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+    justify-content: center;
+    text-decoration: none;
+    transition: background .2s;
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -ms-transition: background .2s;
+    -o-transition: background .2s;
+    margin-left: 1.6rem;
+    outline: 0;
+}
+
+.teacher-item footer .button:hover {
+    background: var(--color-secondary-dark);
+}
+
+.teacher-item footer .button img {
+    margin-right: 16px;
+    margin-left: -12px;
+}
+
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+      -webkit-transform: translateY(3rem);
+      -moz-transform: translateY(3rem);
+      -ms-transform: translateY(3rem);
+      -o-transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0);
+      -webkit-transform: translate(0);
+      -moz-transform: translate(0);
+      -ms-transform: translate(0);
+      -o-transform: translate(0);
+    }
+  }
+
+#page-study main  .no-results {
+    max-width: 30rem;
+    margin: 12rem auto;
+    text-align: center;
+    animation: moveInBottom  1s ease-out;
+    -webkit-animation: moveInBottom  1s ease-out;
+}
+
+@media (min-width: 700px) {
+    #page-study #container {
+        max-width: 100vw;
+    }
+
+    .page-header {
+        height: 340px;
+    }
+
+    .page-header .top-bar-container {
+        max-width: 1100px;
+    }
+    
+    .page-header .header-content{
+        max-width: 740px;
+
+        margin: 0 auto;
+
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
+
+    .teacher-item header,
+    .teacher-item footer {
+        padding: 32px;
+    }
+
+    #search-teachers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+
+    #page-study main {
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
+    #search-teachers .select-block {
+        margin-bottom: 0;
+    }
+
+    .teacher-item > p {
+        padding: 0 32px;
+    }
+
+    .teacher-item footer p strong {
+        display: initial;
+        margin-left: 16px;
+    }
+
+    .teacher-item footer .button {
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .teacher-item footer .button img {
+        margin-right: 16px;
+   }
+ }
