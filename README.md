@@ -22,6 +22,7 @@
 -  [Requisitos](#prerequisito)
 -  [Como Executar](#execute)
 <br><br>
+
 <a name="sobre"><h2> 📓 Sobre </h2>
 Proffy é um projeto oferecido pela <a href="https://rocketseat.com.br/">Rocketseat</a> durante a Next Level Week 2, realizado entre os dias 03 e 15 de agosto.
 A proposta do projeto é conectar os alunos aos professores em uma plataforma de estudos on-line, promovendo as aulas a distância nesse período de isolamento. </a>
