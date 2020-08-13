@@ -154,7 +154,7 @@ $ ctrl + c = parar de excutar algo
  Desenvolvido com 💖 por Laylia Dhennyfe, junto com a <a href="https://rocketseat.com.br/">Rocketseat</a> 🚀. 
 </h3>
 <h4 align="center"> 
-	🚧  Proffy 🚀 Finalizado! 🚧
+	🚧  Proffy 🚀 em construção! 🚧
 </h4>
 
 
